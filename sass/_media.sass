@@ -1,7 +1,37 @@
 @media (max-width: 1200px)
   .container
     max-width: 960px
-
+  .hidden
+    display: none
+  .recommend
+    max-width: 565px
+  .review
+    &-recommend
+      width: 100%
+      margin-bottom: 30px
+  .book
+    &-name
+      font-size: 32px
+      line-height: 40px
+      margin: 15px 41px 10px 0
+    &-genre
+      font-size: 29px
+      line-height: 26px
+      margin: 0 161px 15px 0
+    &-pricetag
+      font-size: 25px
+    &-button
+      max-width: 100%
+      font-size: 21px
+      padding: 10px 46px
+  .favorites-icon
+    width: 30px
+    height: 24px
+    margin-left: 43px
+  .best
+    &-button
+      max-width: 100%
+      padding: 12px 25px
 @media (max-width: 992px)
   .container
     max-width: 700px
@@ -36,15 +66,64 @@
   .button
     margin: 15px
     padding: 22px
-    width: 100%
+    max-width: 100%
     height: 70px
     &-border
       font-size: 16px
       line-height: 22px
+  .recommend
+    max-width: 380px
+    &-image
+      margin-right: 21px
+  .review
+    &-title
+      font-size: 29px
+    &-book
+      max-width: 100%
+    &-top
+      max-width: 100%
+  .book
+    &-name
+      font-size: 22px
+      line-height: 32px
+      margin: 15px 10px 10px 0
+    &-genre
+      font-size: 18px
+      line-height: 22px
+      margin: 1px 9px 15px 0
+    &-pricetag
+      font-size: 20px
+      line-height: 24px
+    &-button
+      font-size: 16px
+      padding: 7px 20px
+  .favorite
+    &-icon
+      width: 22px
+      height: 19px
+      margin-left: 18px
+  .top
+    max-width: 290px
+    padding: 21px 12px 23px 15px
+    &-name
+      font-size: 16px
+      line-height: 22px
+    &-pricetag
+      font-size: 18px
+      line-height: 24px
+    &-image
+      margin-right: 15px
+  .best
+    &-button
+      font-size: 16px
+      line-height: 11px
+      padding: 20px 37px 0 37px
 @media (max-width: 767px)
   .container
     max-width: 576px
     width: 92%
+  .hidden--1
+    display: none
   .navbar
     &--mobile
       &--fixed
@@ -76,10 +155,71 @@
   .book
     &-title
       margin-top: 72px
+  .recommend
+    max-width: 250px
+    height: 800px
+    &-image
+      width: 110px
+      height: 153px
+      margin-right: 0
+  .review
+    padding: 50px 0
+    &-recommend
+      flex-wrap: wrap
+      justify-content: center
+      min-width: 92%
+      height: 345px
+      padding: 11px
+      margin-bottom: 20px
+    &-top
+      min-width: 92%
+      margin-bottom: 0px
+  .book
+    &-name
+      font-size: 20px
+      line-height: 28px
+      margin: 5px 40px 5px 0
+    &-genre
+      font-size: 16px
+      line-height: 22px
+      margin: 0 42px 0 0
+    &-pricetag
+      font-size: 20px
+      line-height: 24px
+    &-button
+      max-width: 100%
+      font-size: 15px
+      line-height: 22px
+      padding: 5px 20px
+      margin-bottom: 0
+      margin-top: 10px
+  .top
+    max-width: 259px
+    height: 800px
+    &-image
+      max-width: 101px
+      max-height: 154px
+      margin-right: 9px
+    &-name
+      font-size: 16px
+      line-height: 22px
+      margin: 0
+      margin-top: 5px
+    &-pricetag
+      font-size: 16px
+      line-height: 20px
+    &-line
+      margin: 0
+  .best
+    &-button
+      max-width: 100%
+      padding: 20px 37px 0 37px
 @media (max-width: 576px)
   .container
     max-width: 500px
     width: 91%
+  .hidden--2
+    display: none
   .navbar
     &-wrapp
       padding: 20px 0
@@ -107,3 +247,97 @@
     &-image
       width: 143px
       height: 215px
+  .review
+    &-box
+      flex-wrap: wrap
+      justify-content: center
+      align-items: center
+    &-title
+      text-align: center
+      font-size: 28px
+      line-height: 36px
+      &--1
+        margin-bottom: 79px
+      &--2
+        margin-top: 75px
+    &-recommend
+      width: 100%
+      height: 331px
+      padding: 11px
+      margin-bottom: 0
+    &-top
+      width: 84%
+      justify-content: start
+  .recommend
+    max-width: 280px
+    max-height: 309px
+    margin-bottom: 54px
+    &-image
+      width: 95px
+      height: 137px
+      margin-right: 0
+      margin-top: -40px
+      margin-bottom: 20px
+    &-button
+      height: 50px
+      font-size: 16px
+      text-transform: none
+      padding: 16px 25px
+  .book-name
+    display: block
+  .book-name br
+    display: none
+  .book
+    &-name
+      font-size: 20px
+      line-height: 24px
+      margin: 0
+    &-genre
+      font-size: 14px
+      line-height: 24px
+      margin: 0
+    &-pricetag
+      font-size: 16px
+      line-height: 20px
+    &-button
+      font-size: 16px
+      line-height: 22px
+      padding: 7px 26px
+      margin-top: 30px
+    &-info
+      justify-content: space-between
+      max-height: 156px
+      align-items: center
+      text-align: center
+      margin-top: -65px
+  .favorites
+    &-icon
+      width: 22px
+      height: 19px
+      margin-left: 17px
+      margin-top: 30px
+  .top
+    max-width: 280px
+    height: 803px
+    padding: 30px 7px 0 7px
+    &-info
+      justify-content: space-between
+      max-height: 156px
+      text-align: start
+      margin-top: 0
+    &-name
+      width: 120px
+      font-size: 14px
+      margin: 0
+      margin-top: 5px
+      margin-bottom: 19px
+    &-image
+      max-width: 95px
+      max-height: 142px
+      margin-right: 14px
+    &-pricetag
+      font-size: 20px
+    &-button
+      margin-top: 11px
+  .best-button
+    padding: 29px 37px 0 37px

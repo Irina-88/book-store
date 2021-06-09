@@ -24,6 +24,8 @@
       max-width: 100%
       font-size: 21px
       padding: 10px 46px
+    &-info
+      min-width: 170px
   .favorites-icon
     width: 30px
     height: 24px
@@ -32,6 +34,19 @@
     &-button
       max-width: 100%
       padding: 12px 25px
+  .category
+    &-slider
+      &__item
+        padding: 0
+        width: 213px
+        height: 224px
+      &__title
+        font-size: 18px
+      &__description
+        font-size: 14px
+      &__button
+        &--right
+          left: 90%
 @media (max-width: 992px)
   .container
     max-width: 700px
@@ -118,11 +133,35 @@
       font-size: 16px
       line-height: 11px
       padding: 20px 37px 0 37px
+  .case
+    padding-top: 55px
+  .category
+    &-slider
+      &__item
+        padding: 5px
+        width: 166px
+        height: 260px
+      &__title
+        font-size: 18px
+        line-height: 25px
+      &__description
+        font-size: 14px
+        line-height: 20px
+      &__button
+        &-item
+          width: 48px
+          height: 48px
+        &--right
+          bottom: 126px
+          left: 85%
+        &--left
+          bottom: 126px
+          right: 32px
 @media (max-width: 767px)
   .container
     max-width: 576px
     width: 92%
-  .hidden--1
+  .hidden-1
     display: none
   .navbar
     &--mobile
@@ -175,6 +214,8 @@
       min-width: 92%
       margin-bottom: 0px
   .book
+    &-info
+      min-width: 170px
     &-name
       font-size: 20px
       line-height: 28px
@@ -214,11 +255,43 @@
     &-button
       max-width: 100%
       padding: 20px 37px 0 37px
+  .swiper
+    &-wrapper
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+      align-items: center
+      min-height: 511px
+  .category
+    &-slider
+      &__item
+        padding: 10px
+        width: 245px
+        height: 220px
+      &__title
+        font-family: Roboto Condensed
+        font-style: normal
+        font-weight: bold
+        font-size: 18px
+        line-height: 25px
+      &__description
+        font-size: 14px
+        line-height: 20px
+      &__button
+        &-item
+          width: 48px
+          height: 48px
+        &--right
+          bottom: 253px
+          left: 82%
+        &--left
+          bottom: 253px
+          right: 32px
 @media (max-width: 576px)
   .container
     max-width: 500px
     width: 91%
-  .hidden--2
+  .hidden-2
     display: none
   .navbar
     &-wrapp
@@ -341,3 +414,34 @@
       margin-top: 11px
   .best-button
     padding: 29px 37px 0 37px
+  .swiper
+    &-wrapper
+      min-height: 382px
+  .case
+    padding-top: 46px
+  .category
+    &-slider
+      &__item
+        padding: 14px
+        max-width: 44vw
+        height: 182px
+      &__title
+        font-size: 16px
+        line-height: 20px
+        margin-top: 10px
+
+      &__description
+        font-size: 12px
+        line-height: 20px
+      &__image
+        width: 36px
+        height: 36px
+      &__button
+        width: 48px
+        height: 48px
+        &--right
+          top: 60px
+          left: 33%
+        &--left
+          top: 60px
+          left: 91px
